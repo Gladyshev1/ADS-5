@@ -97,7 +97,6 @@ int eval(std::string pref) {
             str.clear();
         } else if (indicator == 43 || indicator == 45 ||
             indicator == 42 || indicator == 47) {
-
             switch (indicator) {
             case 43: {
                 S = stacks.pop();
