@@ -15,7 +15,7 @@ public:
     TStack() : t(0) {}
 
     T pop() {
-        if (top > 0)
+        if (t > 0)
             return data[t--];
         else
             throw std::string("empty");
