@@ -7,7 +7,7 @@
 template<typename T, int Size>
 class TStack {
 private:
-    
+
     T data[Size];
     int t;
 
@@ -16,7 +16,7 @@ public:
 
     T pop() {
         if (t > 0)
-            return data[t--];
+            return data[--t];
         else
             throw std::string("empty");
     }
@@ -28,7 +28,7 @@ public:
             throw std::string("full");
     }
 
-   
+
     bool isEmpty() {
         return t == 0;
     }
